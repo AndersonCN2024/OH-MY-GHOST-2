@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh My Ghost</title>
+    <link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo"> <a href="INDEX.html"><img src="Img/LOGO-NUEVO.png" alt="Oh My Ghost"></a>
+            </div>
+            
+            <!-- Menu -->
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#eventos">Eventos especiales</a></li>
+                <li><a href="#tienda">Tienda Online</a></li>
+                <li class="dropdown">
+                    <a href="#mas">Más opciones ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="INTERNAS/INDEXSB.html">Sobre nosotros</a></li>
+                        <li><a href="INTERNAS/INDEXCT.html">Contactanos</a></li>
+                        <li><a href="INTERNAS/INDEXPF.html">Preguntas Frecuentes</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <!-- Búsqueda y Login -->
+            <div class="actions">
+                <div class="search">
+                    <input type="text" placeholder="Buscar...">
+                    <img src="Img/busqueda.png" alt="Buscar" class="search-icon-img">
+                </div>
+                <button class="login-btn">Iniciar sesión</button>
+            </div>
+            
+            <!-- Menu móvil -->
+            <button class="mobile-btn" onclick="toggleMenu()">☰</button>
+        </div>
+        
+        <!-- Menu móvil desplegable -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#inicio">Inicio</a>
+            <a href="#eventos">Eventos especiales</a>
+            <a href="#tienda">Tienda Online</a>
+            <a href="#mas">Más opciones</a>
+            <div class="mobile-search">
+                <input type="text" placeholder="Buscar...">
+                <img src=" " alt="Buscar" class="search-icon-img">
+            </div>
+            <button class="login-btn">Iniciar sesión</button>
+        </div>
+    </nav>
+
+	  <div class="hero-section">
+        <!-- Background Pattern -->
+        <div class="background-pattern"></div>
+        
+        <!-- Decorative Elements -->
+        <div class="decorative-circle decorative-circle-1"></div>
+        <div class="decorative-circle decorative-circle-2"></div>
+        
+        <div class="container">
+            <div class="content-grid">
+                <!-- Left Content -->
+                <div class="text-content">
+                    <div class="text-wrapper">
+                        <h1 class="main-title">
+                            Descubre el mundo del
+                            <span class="gradient-text">anime con Oh my Ghost</span>
+                        </h1>
+                        
+                        <p class="description">
+                            Únete a nuestra comunidad apasionada por la cultura japonesa.
+                            Participa en eventos emocionantes y explora nuestra tienda
+                            llena de sorpresas, donde encontrarás productos exclusivos y
+                            con todo el estilo del mundo anime y geek que tanto te encanta.
+                        </p>
+                    </div>
+
+                    <div class="buttons-container">
+                        <button class="btn btn-primary">Eventos</button>
+                        <button class="btn btn-secondary">Tienda</button>
+                    </div>
+                </div>
+
+                <!-- Right Content - CSS-only Carousel -->
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-inner">
+                            <div class="slide slide-1">
+                                <img src="Img/IMAGEN 1.png" alt="Anime Event 1">
+                                <div class="slide-overlay"></div>
+                            </div>
+                            <div class="slide slide-2">
+                                <img src="Img/IMAGEN 2.png" alt="Anime Event 2">
+                                <div class="slide-overlay"></div>
+                            </div>
+                            <div class="slide slide-3">
+                                <img src="Img/IMAGEN 3.png" alt="Anime Event 3">
+                                <div class="slide-overlay"></div>
+                            </div>
+                            <div class="slide slide-4">
+                                <img src="Img/IMAGEN 4.png" alt="Anime Event 4">
+                                <div class="slide-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dots Indicator -->
+                    <div class="dots-container">
+                        <div class="dot dot-1"></div>
+                        <div class="dot dot-2"></div>
+                        <div class="dot dot-3"></div>
+                        <div class="dot dot-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- SECCIÓN ANIME - COPIA DESDE AQUÍ -->
+    <div class="anime-section">
+        <div class="anime-container">
+            <!-- Título -->
+            <h1 class="anime-title">
+                Descubre la magia del anime y su cultura<br/>
+                vibrante con <span class="anime-brand">Oh my Ghost</span>.
+            </h1>
+            
+            <!-- Tarjetas -->
+            <div class="anime-cards">
+                <!-- Tarjeta 1 - Eventos -->
+                <div class="anime-card">
+                    <div class="anime-icon-container">
+                        <div class="anime-icon">
+                            <!-- Icono calendario - Reemplaza con <img src="tu-icono.png"> -->
+                            <svg viewBox="0 0 24 24">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="anime-card-text">
+                        Organizamos eventos únicos que celebran la creatividad del anime.
+                    </p>
+                    <button class="anime-button">
+                        Explorar →
+                    </button>
+                </div>
+                
+                <!-- Tarjeta 2 - Momentos -->
+                <div class="anime-card">
+                    <div class="anime-icon-container">
+                        <div class="anime-icon">
+                            <!-- Icono paquete - Reemplaza con <img src="tu-icono.png"> -->
+                            <svg viewBox="0 0 24 24">
+                                <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27,6.96 12,12.01 20.73,6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="anime-card-text">
+                        Vive momentos emocionantes en nuestros eventos de cosplay y festivales.
+                    </p>
+                    <button class="anime-button">
+                        Unirte →
+                    </button>
+                </div>
+                
+                <!-- Tarjeta 3 - Estilo -->
+                <div class="anime-card">
+                    <div class="anime-icon-container">
+                        <div class="anime-icon">
+                            <!-- Icono bolsa - Reemplaza con <img src="tu-icono.png"> -->
+                            <svg viewBox="0 0 24 24">
+                                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="anime-card-text">
+                        Personaliza tu estilo con nuestras prendas únicas y creativas.
+                    </p>
+                    <button class="anime-button">
+                        Comprar →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+ <section class="events-section">
+        <div class="events-container">
+            <div class="events-content">
+                <div class="events-image-container">
+                    <img src="Img/image 4.png" 
+                        alt="Promoción Red Power" 
+                        class="events-promo-image"
+                    />
+                </div>
+                
+                <div class="events-text-content">
+                    <div class="events-header">
+                        <span class="events-badge">Eventos</span>
+                        <h2 class="events-title">
+                            Descubre nuestros emocionantes eventos y actividades
+                        </h2>
+                    </div>
+                    
+                    <p class="events-description">
+                        En Oh my Ghost, organizamos una variedad de eventos que 
+                        celebran la cultura del anime. Desde concursos de cosplay hasta 
+                        festivales del cómic, cada evento es una experiencia única para 
+                        los fanáticos.
+                    </p>
+					
+                    <div class="events-features">
+  <div class="events-feature-item">
+    <img src="Img/Relume.png" alt="Cosplay Icono" class="events-feature-icon-img">
+    <span>Concursos de cosplay llenos de creatividad y diversión.</span>
+  </div>
+  <div class="events-feature-item">
+    <img src="Img/Relume.png" alt="Cómic Icono" class="events-feature-icon-img">
+    <span>Festivales del cómic con actividades para toda la familia.</span>
+  </div>
+  <div class="events-feature-item">
+    <img src="Img/Relume.png" alt="Actores Icono" class="events-feature-icon-img">
+    <span>Firmas de actores que traen a tus ídolos cerca.</span>
+  </div>
+</div>
+                    
+                    <div class="events-buttons">
+                        <button class="events-btn events-btn-primary">Únete</button>
+                        <button class="events-btn events-btn-secondary">Más información</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <div class="testimonial-carousel-container">
+        <!-- Título -->
+        <h1 class="testimonial-carousel-title">Testimonios de nuestros fans</h1>
+
+        <!-- Input radios ocultos para controlar el carrusel -->
+        <input type="radio" name="testimonial-carousel" id="testimonial-slide1" checked="checked">
+        <input type="radio" name="testimonial-carousel" id="testimonial-slide2">
+        <input type="radio" name="testimonial-carousel" id="testimonial-slide3">
+
+        <!-- Botones de navegación -->
+        <label for="testimonial-slide3" class="testimonial-carousel-btn testimonial-carousel-btn-prev" data-prev="1">‹</label>
+        <label for="testimonial-slide1" class="testimonial-carousel-btn testimonial-carousel-btn-prev" data-prev="2">‹</label>
+        <label for="testimonial-slide2" class="testimonial-carousel-btn testimonial-carousel-btn-prev" data-prev="3">‹</label>
+
+        <label for="testimonial-slide2" class="testimonial-carousel-btn testimonial-carousel-btn-next" data-next="1">›</label>
+        <label for="testimonial-slide3" class="testimonial-carousel-btn testimonial-carousel-btn-next" data-next="2">›</label>
+        <label for="testimonial-slide1" class="testimonial-carousel-btn testimonial-carousel-btn-next" data-next="3">›</label>
+
+       <!-- Área de contenido central -->
+<div class="testimonial-carousel-content">
+
+    <div class="testimonial-carousel-slide" data-slide="1">
+        <!-- Imagen dentro del recuadro decorativo -->
+        <div class="testimonial-image-placeholder">
+            <img src="Img/OPINION1.png" alt="Testimonio 1" class="testimonial-image">
+        </div>
+    </div>
+
+    <div class="testimonial-carousel-slide" data-slide="2">
+        <div class="testimonial-image-placeholder">
+            <img src="Img/OPINION2.png" class="testimonial-image">
+        </div>
+    </div>
+
+    <div class="testimonial-carousel-slide" data-slide="3">
+        <div class="testimonial-image-placeholder">
+            <img src="Img/OPINION3.png" class="testimonial-image">
+        </div>
+    </div>
+
+</div>
+        <!-- Indicadores de puntos -->
+        <div class="testimonial-carousel-indicators">
+            <label for="testimonial-slide1" class="testimonial-indicator"></label>
+            <label for="testimonial-slide2" class="testimonial-indicator"></label>
+            <label for="testimonial-slide3" class="testimonial-indicator"></label>
+        </div>
+    </div>
+	
+	
+	 <section class="newsletter-section">
+        <div class="newsletter-container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">¡Únete a nuestra comunidad!</h2>
+                    <p class="newsletter-subtitle">
+                        Suscríbete a nuestro boletín y mantenente al tanto de las últimas novedades y eventos.
+                    </p>
+                    
+                    <form class="newsletter-form" onsubmit="handleSubmit(event)">
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Ingresa tu correo"
+                            class="newsletter-input"
+                            required
+                        />
+                        <button type="submit" class="newsletter-button">
+                            Suscríbete
+                        </button>
+                    </form>
+                    
+                    <p class="newsletter-terms">
+                        Al hacer click en suscribirte aceptas nuestros términos y condiciones.
+                    </p>
+                </div>
+                
+<div class="newsletter-character">
+  <div class="character-ghost">
+    <div class="character-body image-only">
+      <img src="Img/SOLO-FANTASMA.png" alt="Fantasma personalizado">
+    </div>
+  </div>
+</div>
+    </section>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            console.log('Email suscrito:', email);
+            alert('¡Gracias por suscribirte! Email: ' + email);
+            document.getElementById('email').value = '';
+        }
+    </script>
+			
+  <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Logo Section -->
+                <div class="footer-logo">
+                    <div class="logo-circle">
+                        <!-- Reemplaza "tu-logo.png" con el nombre de tu imagen -->
+                        <a href="INDEX.html"><img src="Img/LOGO-NUEVO.png" alt="OH MY GHOST" class="logo-image" /></a>
+                    </div>
+                </div>
+
+                <!-- Information Section -->
+                <div class="footer-column">
+                    <h3 class="footer-title">Información General</h3>
+                    <ul class="footer-links">
+                        <li><a href="INTERNAS/INDEXSB.html">Sobre Nosotros</a></li>
+                        <li><a href="#events">Eventos Próximos</a></li>
+                        <li><a href="INTERNAS/INDEXCT.html">Contáctanos</a></li>
+                        <li><a href="INTERNAS/INDEXPF.html">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Section -->
+                <div class="footer-column">
+                    <h3 class="footer-title">Redes Sociales</h3>
+                    <ul class="footer-links">
+                        <li><a href="#facebook">Facebook</a></li>
+                        <li><a href="#instagram">Instagram</a></li>
+                        <li><a href="#tiktok">TikTok</a></li>
+                    </ul>
+                </div>
+
+                <!-- Subscribe Section -->
+                <div class="footer-column">
+                    <h3 class="footer-title">Suscríbete</h3>
+                    <ul class="footer-links">
+                        <li><a href="#news">Novedades</a></li>
+                        <li><a href="#promotions">Promociones</a></li>
+                        <li><a href="#special-events">Eventos Especiales</a></li>
+                        <li><a href="#testimonials">Testimonios</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Purple Divider -->
+            <div class="footer-divider"></div>
+
+            <!-- Bottom Section -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>© 2025 Relume. Todos los derechos reservados.</p>
+                    <div class="footer-legal">
+                        <a href="#privacy">Política de Privacidad</a>
+                        <a href="#terms">Términos de Servicio</a>
+                        <a href="#cookies">Configuración de Cookies</a>
+                    </div>
+                </div>
+                
+<div class="footer-social-icons">
+    <a href="#facebook" class="social-icon">
+        <img src="Img/Facebook.png" alt="Facebook" class="social-image">
+    </a>
+    <a href="#instagram" class="social-icon">
+        <img src="Img/Instagram.png" alt="Instagram" class="social-image">
+    </a>
+    <a href="#youtube" class="social-icon">
+        <img src="Img/Youtube.png" alt="YouTube" class="social-image">
+    </a>
+</div>
+</div>
+			
+			
+</body>
+</html>
+
+               
+   

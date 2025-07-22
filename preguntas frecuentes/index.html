@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh My Ghost</title>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+<link href="stylepf.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo"> <a href="../INDEX.html"><img src="../Img/LOGO-NUEVO.png" alt="Oh My Ghost"></a>
+            </div>
+            
+            <!-- Menu -->
+            <ul class="menu">
+                <li><a href="../INDEX.html">Inicio</a></li>
+                <li><a href="#eventos">Eventos especiales</a></li>
+                <li><a href="#tienda">Tienda Online</a></li>
+                <li class="dropdown">
+                    <a href="#mas">Más opciones ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="INDEXSB.html">Sobre nosotros</a></li>
+                        <li><a href="INDEXCT.html">Contactanos</a></li>
+                        <li><a href="#acerca">Preguntas Frecuentes</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <!-- Búsqueda y Login -->
+            <div class="actions">
+                <div class="search">
+                    <input type="text" placeholder="Buscar...">
+                    <img src="../Img/busqueda.png" alt="Buscar" class="search-icon-img">
+                </div>
+                <button class="login-btn">Iniciar sesión</button>
+            </div>
+            
+            <!-- Menu móvil -->
+            <button class="mobile-btn" onclick="toggleMenu()">☰</button>
+        </div>
+        
+        <!-- Menu móvil desplegable -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#inicio">Inicio</a>
+            <a href="#eventos">Eventos especiales</a>
+            <a href="#tienda">Tienda Online</a>
+            <a href="#mas">Más opciones</a>
+            <div class="mobile-search">
+                <input type="text" placeholder="Buscar...">
+                <img src=" " alt="Buscar" class="search-icon-img">
+            </div>
+            <button class="login-btn">Iniciar sesión</button>
+         </div>
+    </nav>
+ 
+	 <section class="faq-section">
+        <!-- Espacio para tu imagen de fondo -->
+        <div class="faq-background-image">
+            <!-- Aquí puedes agregar tu imagen de fondo -->
+        </div>
+        
+        <div class="faq-container">
+            <div class="faq-content">
+                <h2 class="faq-title">PREGUNTAS FRECUENTES</h2>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(0)">
+                            <span>¿Qué tipo de productos ofrecen?</span>
+                            <span class="faq-icon" id="icon-0">▼</span>
+                        </button>
+                        <div class="faq-answer" id="answer-0" style="display: none;">
+                            <p>Ofrecemos una amplia variedad de productos de alta calidad para satisfacer todas tus necesidades.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(1)">
+                            <span>¿Realizan envíos a todo el país?</span>
+                            <span class="faq-icon" id="icon-1">▼</span>
+                        </button>
+                        <div class="faq-answer" id="answer-1" style="display: none;">
+                            <p>Sí, realizamos envíos a nivel nacional con diferentes opciones de entrega.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(2)">
+                            <span>¿Cuánto tiempo tarda en llegar mi pedido?</span>
+                            <span class="faq-icon" id="icon-2">▼</span>
+                        </button>
+                        <div class="faq-answer" id="answer-2" style="display: none;">
+                            <p>Los tiempos de entrega varían según tu ubicación, generalmente entre 2-5 días hábiles.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question active" onclick="toggleFAQ(3)">
+                            <span>¿Aceptan pagos por Yape, Plin u otras plataformas?</span>
+                            <span class="faq-icon" id="icon-3">▲</span>
+                        </button>
+                        <div class="faq-answer" id="answer-3" style="display: block;">
+                            <p>Sí, aceptamos pagos por Yape, Plin, transferencia bancaria y otros métodos populares en Perú. Al momento de hacer tu pedido te enviaremos las opciones de pago disponibles junto con los datos necesarios para completar la transacción.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Espacio para tu personaje/imagen -->
+                <div class="faq-character">
+                    <img src="../Img/DIBUJO.png" alt="Personaje FAQ" class="character-image" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let openIndex = 3; // La cuarta pregunta abierta por defecto
+
+        function toggleFAQ(index) {
+            const answer = document.getElementById(`answer-${index}`);
+            const icon = document.getElementById(`icon-${index}`);
+            const question = document.querySelector(`[onclick="toggleFAQ(${index})"]`);
+            
+            // Si ya está abierta, cerrarla
+            if (openIndex === index) {
+                answer.style.display = 'none';
+                icon.textContent = '▼';
+                question.classList.remove('active');
+                openIndex = null;
+            } else {
+                // Cerrar la pregunta anteriormente abierta
+                if (openIndex !== null) {
+                    const prevAnswer = document.getElementById(`answer-${openIndex}`);
+                    const prevIcon = document.getElementById(`icon-${openIndex}`);
+                    const prevQuestion = document.querySelector(`[onclick="toggleFAQ(${openIndex})"]`);
+                    
+                    prevAnswer.style.display = 'none';
+                    prevIcon.textContent = '▼';
+                    prevQuestion.classList.remove('active');
+                }
+                
+                // Abrir la nueva pregunta
+                answer.style.display = 'block';
+                icon.textContent = '▲';
+                question.classList.add('active');
+                openIndex = index;
+            }
+        }
+    </script>
+	</div> <!-- cierre de .faq-container -->
+<div class="faq-bottom-bar"></div> <!-- nueva franja amarilla -->
+</section>
+
+</body>
+</html>
